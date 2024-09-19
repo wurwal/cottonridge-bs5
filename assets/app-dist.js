@@ -1,0 +1,2 @@
+function sayHello(){return"Hello, World!"}function testSayHello(){const l=sayHello(),e="Hello, World!";l===e?console.log("Test passed!"):console.log(`Test failed: expected "${e}", but got "${l}"`)}testSayHello();
+//# sourceMappingURL=app-dist.js.map

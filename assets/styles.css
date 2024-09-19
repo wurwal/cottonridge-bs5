@@ -1,0 +1,61 @@
+/*top lvel*/
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/*header*/
+.container-topbar {
+  padding: 10px;
+  font-size: 13px;
+}
+
+.ico {
+  max-width: 18px;
+}
+
+.container-topbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+/*custom helper*/
+.btn-wide {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/*mega menu*/
+.dropdown-menu.mega-menu {
+  left: 0; /* Align dropdown to the left */
+  right: 0; /* Stretch dropdown to the right */
+  width: 100vw; /* Full viewport width */
+  padding: 1rem; /* Optional padding */
+  top: 100%; /* Position below the nav */
+}
+
+.mega-menu-content {
+  padding: 1rem; /* Add some padding to the inner content */
+}
+
+.mega-menu-content img {
+  width: 100%; /* keep all images full width */
+}
+
+/*keeps mm dropdown relative to left of viewport not the dropdown nav item*/
+.nav-item.dropdown {
+  position: static;
+}
+
+/*footer*/
+.container-footer-c2a {
+  min-height: 360px;
+  background: url(/assets/images/bg-footer-c2a.jpg) no-repeat center center;
+  background-size: cover;
+}
+.container-footer-c2a h1, .container-footer-c2a h2, .container-footer-c2a h3, .container-footer-c2a h4, .container-footer-c2a h5 {
+  color: #fff;
+}
