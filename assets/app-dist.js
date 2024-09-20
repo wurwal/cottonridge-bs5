@@ -1,2 +1,2 @@
-function sayHello(){return"Hello, World!"}function testSayHello(){const l=sayHello(),e="Hello, World!";l===e?console.log("Test passed!"):console.log(`Test failed: expected "${e}", but got "${l}"`)}testSayHello();
+var tooltipTriggerList=[].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')),tooltipList=tooltipTriggerList.map((function(t){return new bootstrap.Tooltip(t,{customClass:"cottonridge-tooltip"})}));
 //# sourceMappingURL=app-dist.js.map

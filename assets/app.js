@@ -1,18 +1,6 @@
-function sayHello() {
-    return "Hello, World!";
-}
-
-// Test function
-function testSayHello() {
-    const result = sayHello();
-    const expected = "Hello, World!";
-
-    if (result === expected) {
-        console.log("Test passed!");
-    } else {
-        console.log(`Test failed: expected "${expected}", but got "${result}"`);
-    }
-}
-
-// Run the test
-testSayHello(); 
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl, {
+    'customClass': 'cottonridge-tooltip'
+  })
+})
