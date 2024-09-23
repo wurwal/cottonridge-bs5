@@ -1,4 +1,8 @@
 /*top level*/
+body, html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -64,6 +68,11 @@ img {
 }
 
 @media (min-width: 1200px) {
+  .h1, h1 {
+    font-size: 3.2rem;
+  }
+}
+@media (min-width: 1200px) {
   .h2, h2 {
     font-size: 2.2rem;
   }
@@ -82,19 +91,7 @@ img {
   border-radius: 4px; /* Optional: Add rounded corners if desired */
 }
 
-.tooltip.bs-tooltip-right .tooltip-arrow::after {
-  border-right-color: #fff !important;
-}
-
-.tooltip.bs-tooltip-left .tooltip-arrow::after {
-  border-left-color: #fff !important;
-}
-
-.tooltip.bs-tooltip-bottom .tooltip-arrow::after {
-  border-bottom-color: #fff !important;
-}
-
-.tooltip.bs-tooltip-top .tooltip-arrow::after {
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before {
   border-top-color: #fff !important;
 }
 
@@ -145,12 +142,44 @@ img {
   margin-bottom: 40px;
 }
 
+.max-width-100px {
+  max-width: 100px;
+}
+
 .max-width-380px {
   max-width: 380px;
 }
 
+.max-width-420px {
+  max-width: 420px;
+}
+
+.max-width-480px {
+  max-width: 480px;
+}
+
+.max-width-780px {
+  max-width: 780px;
+}
+
+.max-width-980px {
+  max-width: 980px;
+}
+
+.max-width-1200px {
+  max-width: 1200px;
+}
+
 .min-height-400px {
   min-height: 400px;
+}
+
+.min-height-640px {
+  min-height: 640px;
+}
+
+.width-100 {
+  width: 100%;
 }
 
 .height-100 {
@@ -210,9 +239,21 @@ img {
   background-color: #071437;
 }
 
+.bg-color-gray-1 {
+  background-color: #F7F7F7;
+}
+
+.bg-colour-offblack {
+  background-color: #1B1C1E;
+}
+
+.gray {
+  color: #989898;
+}
+
 /*header*/
 .container-topbar {
-  padding: 10px;
+  padding: 5px 10px;
   font-size: 13px;
 }
 
@@ -222,6 +263,19 @@ img {
           backdrop-filter: blur(10px); /* Adjust the blur intensity */
   z-index: 2;
   position: relative;
+}
+
+.top-bar-contacts {
+  padding: 5px 10px;
+}
+
+.top-bar-item {
+  padding: 5px 0;
+  min-width: 110px;
+}
+
+.top-bar-item-3 {
+  min-width: 63px;
 }
 
 .navbar-nav {
@@ -279,8 +333,10 @@ li.search img {
   left: 0; /* Align dropdown to the left */
   right: 0; /* Stretch dropdown to the right */
   width: 100vw; /* Full viewport width */
-  padding: 1rem; /* Optional padding */
   top: 100%; /* Position below the nav */
+}
+.dropdown-menu.mega-menu .col-md-3 {
+  padding: 0;
 }
 
 .mega-menu-content {
@@ -337,6 +393,10 @@ li.search img {
   background-image: url(/assets/images/bg-5.jpg);
 }
 
+.bg8 {
+  background-image: url(/assets/images/bg-8.jpg);
+}
+
 /*content blocks*/
 .pill-outline {
   display: inline-block;
@@ -371,13 +431,44 @@ li.search img {
 }
 
 .container-cover--home {
-  padding-top: 83px;
   min-height: 764px;
   background: url(/assets/images/home-cover.jpg) no-repeat center center;
   z-index: 1;
   position: relative;
-  margin-top: -83px;
   background-size: cover;
+}
+@media (min-width: 768px) {
+  .container-cover--home {
+    padding-top: 83px;
+    margin-top: -83px;
+  }
+}
+
+.container-cover--subpage {
+  min-height: 380px;
+  z-index: 1;
+}
+
+.container-intro {
+  position: relative;
+}
+.container-intro .av {
+  max-width: 140px;
+}
+@media (min-width: 992px) {
+  .container-intro .av {
+    max-width: 220px;
+  }
+}
+.container-intro .sig {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  max-width: 230px;
+}
+
+.bg-cover-1 {
+  background-image: url(/assets/images/bg-cover-1.jpg);
 }
 
 .row-4-col {
@@ -401,18 +492,38 @@ li.search img {
 }
 
 .colour-option {
-  height: 28px;
-  width: 28px;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
   border-radius: 50%;
   display: block;
-  margin-right: 15px;
   border: 3px solid #fff;
 }
 @media (min-width: 992px) {
   .colour-option {
-    height: 42px;
-    width: 42px;
+    height: 36px;
+    width: 36px;
+    margin-right: 15px;
   }
+}
+
+/*breadrumb*/
+.container-breadcrumb {
+  padding: 10px;
+  border-top: 1px solid #e2e2e2;
+}
+.container-breadcrumb .active {
+  font-weight: 600;
+}
+.container-breadcrumb .icon-chevron {
+  max-width: 18px;
+}
+.container-breadcrumb ul {
+  margin: 0;
+}
+.container-breadcrumb li {
+  padding-right: 5px;
+  color: #989898;
 }
 
 /*footer*/
