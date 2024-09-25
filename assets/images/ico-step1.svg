@@ -1,0 +1,11 @@
+<svg id="Group_302" data-name="Group 302" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="97.234" height="93.183" viewBox="0 0 97.234 93.183">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_491" data-name="Rectangle 491" width="97.234" height="93.183" fill="none" stroke="#1b1c1e" stroke-width="3.5"/>
+    </clipPath>
+  </defs>
+  <g id="Group_296" data-name="Group 296" clip-path="url(#clip-path)">
+    <path id="Path_50" data-name="Path 50" d="M13.154,8h0A12.154,12.154,0,0,0,1,20.154V36.36A16.206,16.206,0,0,0,17.206,52.566H33.817a28.366,28.366,0,0,1,20.055,8.305L57.72,64.72V40.411" transform="translate(3.051 24.411)" fill="none" stroke="#1b1c1e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"/>
+    <path id="Path_51" data-name="Path 51" d="M52.566,45.566H25.19a12.156,12.156,0,0,0-8.6,3.561L8,57.72V17.206A16.206,16.206,0,0,1,24.206,1h28.36A16.206,16.206,0,0,1,68.771,17.206V29.36A16.206,16.206,0,0,1,52.566,45.566Z" transform="translate(24.411 3.051)" fill="none" stroke="#1b1c1e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"/>
+  </g>
+</svg>
