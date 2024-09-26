@@ -53,12 +53,17 @@ a:hover {
 
 .small, small {
     font-size: .750em;
+    font-weight: 400 !important;
 }
 
 img {
   width:100%;
   max-width: 100%;
   height: auto;
+}
+
+hr {
+  border-top:1px solid #E2E2E2 !important;
 }
 
 /*BS5 over rides*/
@@ -98,7 +103,7 @@ h1, h2 {
   line-height:1 !important;
 }
 
-h3,h4,h5, small {
+h3,h4,h5 {
   font-weight:600 !important;
   line-height:1.2 !important;
 }
@@ -123,19 +128,6 @@ h3,h4,h5, small {
       display: none;
 }
 
-/* Override Bootstrap Tooltip background and text color */
-.tooltip-inner {
-    font-weight:bold;
-    padding:10px 20px;
-    background-color: white !important; /* Set the background to white */
-    color: black !important; /* Set the text color to black */
-    font-size: 13px; /* You can adjust the font size if needed */
-    border-radius: 4px; /* Optional: Add rounded corners if desired */
-}
-
-.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before {
-  border-top-color:#fff !important;
-}
 
 
 /*custom helpers*/
@@ -177,6 +169,14 @@ h3,h4,h5, small {
 
 .mt-60px {
   margin-top:60px;
+}
+
+.mt-70px {
+  margin-top:70px;
+}
+
+.mt-80px {
+  margin-top:80px;
 }
 
 .mb-10px {
@@ -489,18 +489,22 @@ li.search img {
 }
 
 
-
+.border-bottom {
+  border-bottom:1px solid #E2E2E2;
+}
 
 /* Custom CSS to style dropdown like a select input */
 .dropdown-toggle-select {
   display: block;
   width: 100%;
+  min-width:190px;
   padding: .375rem 2.25rem .375rem .75rem !important;
   -moz-padding-start: calc(0.75rem - 3px);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #000;
+  text-align:left;
   background-color: #fff;
   background-image: url(/assets/images/ico-select.svg);
   background-repeat: no-repeat;
@@ -533,6 +537,7 @@ li.search img {
 .col-product-index-filters {
     select, .dropdown-toggle-select {
       max-height:37px !important;
+      max-width: 190px;
     }
 }
 
@@ -671,7 +676,7 @@ li.search img {
   margin-bottom:3px;
 }
 
-/*list icons*/
+/*icons*/
 
 li.icon {
   padding-left:25px;
@@ -686,6 +691,10 @@ li.icon-styles {
 li.icon-colours {
   background:url(/assets/images/ico-colours.svg) no-repeat center left;
   background-size:20px;
+}
+
+.icon-i {
+  max-width:16px;
 }
 
 /*content blocks*/
@@ -844,6 +853,90 @@ li.icon-colours {
       visibility:visible;
   }
 }
+
+/*product index*/
+
+.tag {
+  visibility:hidden;
+}
+.has-tag {
+    visibility:visible;
+}
+
+.colour {
+  display:block;
+  height:20px;
+  width:20px;
+  border-radius:50%;
+  border:2px solid #fff;
+  @media (min-width: 992px) {
+    height:28px;
+    width:28px;
+  }
+}
+
+.colour.selected {
+  border-color:#1B1C1E;
+}
+
+.colour.light {
+  border-color:#eee;
+  border-width:1px;
+  height:18px;
+  width:18px;
+  @media (min-width: 992px) {
+    height:26px;
+    width:26px;
+  }
+}
+
+/*product single*/
+
+.col-prod-thumbnails img {
+  max-width:64%;
+  margin-bottom:20px;
+}
+
+.row-product-single-colors {
+  max-width:250px;
+}
+
+/*tooltip themes*/
+
+.tooltip-black  {
+  /* Override Bootstrap Tooltip background and text color */
+  .tooltip-inner {
+      font-weight:bold;
+      padding:10px 20px;
+      background-color: #000 !important; /* Set the background to white */
+      color: #fff !important; /* Set the text color to black */
+      font-size: 13px; /* You can adjust the font size if needed */
+      border-radius: 4px; /* Optional: Add rounded corners if desired */
+  }
+
+  .tooltip-arrow::before {
+    border-top-color: #000 !important;
+  }
+
+}
+
+/* Override Bootstrap Tooltip background and text color */
+
+.tooltip-white {
+.tooltip-inner {
+    font-weight:bold;
+    padding:10px 20px;
+    background-color: white !important; /* Set the background to white */
+    color: black !important; /* Set the text color to black */
+    font-size: 13px; /* You can adjust the font size if needed */
+    border-radius: 4px; /* Optional: Add rounded corners if desired */
+}
+
+  .tooltip-arrow::before {
+    border-top-color:#fff !important;
+  }
+}
+
 
 /*footer*/
 
