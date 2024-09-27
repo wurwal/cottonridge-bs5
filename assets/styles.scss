@@ -18,6 +18,8 @@
 /*css variables*/
 html {
   --bs-btn-active-bg: #000;
+  --bs-accordion-btn-focus-border-color: #ccc !important;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
 }
 
 /*top level*/
@@ -892,6 +894,42 @@ li.icon-colours {
 
 /*product single*/
 
+/*swiper*/
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+/*main image*/
+.swiper-2 {
+  width: 100%;
+  max-width: 560px;
+}
+
+/*thumbnail nav*/
+.swiper-1 {
+  max-height: 495px;
+  .swiper-slide {
+    opacity:0.2;
+    transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+    -o-transition: all 0.7s;
+  }
+  .swiper-slide-thumb-active {
+    opacity:1;
+  }
+}
+
+.swiper-products-thumbs .swiper-slide {
+  max-width: 150px;
+  margin-bottom: 20px !important;
+}
+
+.swiper-products {
+    margin-left: initial !important;
+}
+
 .col-prod-thumbnails img {
   max-width:64%;
   margin-bottom:20px;
@@ -901,6 +939,88 @@ li.icon-colours {
   max-width:250px;
 }
 
+
+.swiper-button-next, .swiper-button-prev {
+  color:#000;
+}
+
+.ico-zoom {
+  margin-top: 20px;
+      max-width: 20px;
+}
+
+/*accordions*/
+
+
+.accordion-item {
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+.accordion-button {
+    padding: 20px 15px 20px 15px !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    color: #000 !important;
+}
+
+.accordion-button {
+    color: #000 !important;
+}
+
+.accordion-item:first-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/*hot spot*/
+
+.hs-image-wrapper {
+  position:relative;
+  width:100%;
+}
+
+.infobox {
+  display: none;
+  @media (max-width: 767px) {
+    display:block !important;
+  }
+}
+
+.hotspot.active {
+  background: url(/assets/images/hotspot-active.svg) no-repeat center center;
+  background-size:contain;
+}
+
+.hotspot {
+    width:48px;
+    height:48px;
+    display:block;
+    background: url(/assets/images/hotspot.svg) no-repeat center center;
+    background-size:contain;
+    position:absolute;
+    &:hover {
+      cursor:pointer;
+    }
+    @media (max-width: 767px) {
+      display:none;
+    }
+}
+
+.infobox {
+  border:1px solid #000;
+  width:100%;
+  @media (min-width: 768px) {
+    position:absolute;
+    top:20px;
+    right:20px;
+    max-width:320px;
+  }
+}
+
+.infobox.active {
+    display:block;
+}
 /*tooltip themes*/
 
 .tooltip-black  {

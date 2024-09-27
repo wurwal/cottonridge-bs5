@@ -1433,5 +1433,18 @@ CR02K, CR03K, CR04K</small>
   <!-- custom js -->
   <script src="assets/app-dist.js"></script>
 
+  <script>
+  document.querySelector('.link-more').addEventListener('click', function() {
+      const moreContent = document.querySelector('.more');
+      if (moreContent.style.display === 'none') {
+          moreContent.style.display = 'block';
+          this.textContent = 'Less info...';
+      } else {
+          moreContent.style.display = 'none';
+          this.textContent = 'More info...';
+      }
+  });
+</script>
+
 </body>
 </html>
