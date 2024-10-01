@@ -171,7 +171,7 @@
     </div>
 
 
-    <div class="container container-product-single mt-5">
+    <div class="container container-product-single mt-2 mt-md-5">
       <div class="row pt-4 pb-4">
 
         <!-- product gallery -->
@@ -203,7 +203,7 @@
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
-            <div class="zoom-container text-center"><img class="ico-zoom" src="assets/images/ico-zoom.svg" /></div>
+            <div class="zoom-container text-center d-none d-md-block"><img class="ico-zoom" src="assets/images/ico-zoom.svg" /></div>
           </div>
           <div class="col-12 col-md-3">
             <!-- thumbnails -->
@@ -232,8 +232,8 @@
         <!-- product details -->
         <div class="col-12 col-lg-5 col-product-details">
           <p class="gray">P88</p>
-          <h2>Premium Zip Hoodie</h2>
-          <div class="pill-outline">In stock (XXX available)</div>
+          <h2 class="max-width-320px">Premium Zip Hoodie</h2>
+          <div class="pill-outline black">In stock (XXX available)</div>
 
           <hr>
 
@@ -243,7 +243,7 @@
               <li>18 colours</li>
           </ul>
 
-          <a href="#" class="ul">Size Guide</a>
+          <a href="#" class="ul" data-bs-toggle="modal" data-bs-target="#modal-1">Size Guide</a>
 
           <hr>
 
@@ -275,7 +275,7 @@
           <a class="btn btn-dark width-100 d-block mb-4">Show Details</a>
 
           <div class="width-100 text-start text-lg-center mb-4">
-            <small><a href="#" class="ul gray">Don't know our products?</a></small>
+            <small><a href="#" class="ul dark" data-bs-toggle="modal" data-bs-target="#modal-2">Don't know our products?</a></small>
           </div>
 
 
@@ -296,7 +296,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="heading1">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc1" aria-expanded="true" aria-controls="Accordion 1">
-              Key features
+              Key features <span class="icon"></span>
             </button>
           </h2>
           <div id="acc1" class="accordion-collapse collapse show" aria-labelledby="Accordion 1" data-bs-parent="#accordion">
@@ -344,7 +344,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="heading2">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc2" aria-expanded="false" aria-controls="Accordion 2">
-              Composition and care
+              Composition and care          <span class="icon"></span>
             </button>
           </h2>
           <div id="acc2" class="accordion-collapse collapse" aria-labelledby="Accordion 2" data-bs-parent="#accordion">
@@ -356,7 +356,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="heading3">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc3" aria-expanded="false" aria-controls="Accordion 3">
-              Marketing resources
+              Marketing resources          <span class="icon"></span>
             </button>
           </h2>
           <div id="acc3" class="accordion-collapse collapse" aria-labelledby="Accordion 3" data-bs-parent="#accordion">
@@ -368,7 +368,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="heading4">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc4" aria-expanded="false" aria-controls="Accordion 4">
-              Cord change options
+              Cord change options  <span class="icon"></span>
             </button>
           </h2>
           <div id="acc4" class="accordion-collapse collapse" aria-labelledby="Accordion 4" data-bs-parent="#accordion">
@@ -380,7 +380,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="heading5">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc5" aria-expanded="false" aria-controls="Accordion 5">
-              Looking for something more bespoke?
+              Looking for something more bespoke?          <span class="icon"></span>
             </button>
           </h2>
           <div id="acc5" class="accordion-collapse collapse" aria-labelledby="Accordion 5" data-bs-parent="#accordion">
@@ -392,7 +392,8 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="heading6">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc6" aria-expanded="false" aria-controls="Accordion 6">
-              Certifications
+              Certifications          <span class="icon"></span>
+
             </button>
           </h2>
           <div id="acc6" class="accordion-collapse collapse" aria-labelledby="Accordion 6" data-bs-parent="#accordion">
@@ -426,7 +427,7 @@ also like</h2>
           <div class="colour me-2" style="background:#005151"></div>
           <div class="colour me-2" style="background:#7BAFD4"></div>
           <div class="colour me-2" style="background:#671E75"></div>
-          <div class="pill-outline mb-0">+XX</div>
+          <div class="pill-outline black mb-0">+XX</div>
         </div>
       </div>
     </div>
@@ -443,7 +444,7 @@ also like</h2>
           <div class="colour me-2" style="background:#005151"></div>
           <div class="colour me-2" style="background:#7BAFD4"></div>
           <div class="colour me-2" style="background:#671E75"></div>
-          <div class="pill-outline mb-0">+XX</div>
+          <div class="pill-outline  black mb-0">+XX</div>
         </div>
       </div>
     </div>
@@ -451,7 +452,7 @@ also like</h2>
     <div class="col-6 col-lg-3">
       <img alt="Product Title" src="assets/images/product-image-610x792-3.jpg"/>
       <div class="inner pt-3 pb-3">
-        <div class="pill-outline tag"></div>
+        <div class="pill-outline tag">hidden</div>
         <h3>W89PF</h3>
         <p>Ultra Premium Hoodie</p>
         <small class="gray">XXX gsm | Basic <img data-bs-toggle="tooltip" data-bs-custom-class="tooltip-black" data-bs-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend non metus ut scelerisque." class="icon-i" src="assets/images/ico-i.svg"/></small>
@@ -460,7 +461,7 @@ also like</h2>
           <div class="colour me-2" style="background:#005151"></div>
           <div class="colour me-2" style="background:#7BAFD4"></div>
           <div class="colour me-2" style="background:#671E75"></div>
-          <div class="pill-outline mb-0">+XX</div>
+          <div class="pill-outline  black mb-0">+XX</div>
         </div>
       </div>
     </div>
@@ -544,8 +545,8 @@ also like</h2>
         <img src="assets/images/logo-5.jpg"/>
       </div>
     </div>
-    <div class="row mt-5">
-      <div class="col-sm-12 col-md-6 text-center text-md-start">
+    <div class="row mt-5 mb-5">
+      <div class="col-sm-12 col-md-6 text-center text-md-start d-flex align-items-end">
         <small>© Copyright 2024. TGI Coporation LTD. All rights reserved.  Registered No:07815658 | Vat No:227 6471 95</small>
       </div>
       <div class="col-sm-12 col-md-6 text-center text-md-end  d-flex flex-column">
@@ -560,6 +561,50 @@ also like</h2>
   </div>
 
   <!-- end footer -->
+
+  <!-- Modals -->
+
+  <div class="modal fade" tabindex="-1" id="modal-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollabl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Size Guide</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh. Nam ut enim ligula. In hac habitasse platea dictumst. Nulla volutpat quis nisi quis scelerisque. Integer sed auctor felis, quis volutpat erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc bibendum fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque ac sem blandit commodo. Integer sit amet odio viverra, faucibus neque in, pellentesque orci. Maecenas sit amet venenatis purus. Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi. Quisque ornare bibendum metus eu fringilla.</p>
+
+          <p>Morbi id mi quam. Pellentesque iaculis dignissim lorem sit amet gravida. Pellentesque suscipit mattis neque vitae tempus. Aliquam erat volutpat. Morbi a euismod felis. Cras venenatis pellentesque nisl, non hendrerit quam consequat eu. Mauris quis diam id turpis fringilla congue ut viverra dolor. Nulla eu tempor tellus. Fusce dapibus porta mattis. Sed condimentum efficitur nibh, eu lacinia eros egestas ac. Mauris a urna ante.</p>
+
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" id="modal-2">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollabl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Don't Know our Products?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh. Nam ut enim ligula. In hac habitasse platea dictumst. Nulla volutpat quis nisi quis scelerisque. Integer sed auctor felis, quis volutpat erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc bibendum fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque ac sem blandit commodo. Integer sit amet odio viverra, faucibus neque in, pellentesque orci. Maecenas sit amet venenatis purus. Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi. Quisque ornare bibendum metus eu fringilla.</p>
+
+          <p>Morbi id mi quam. Pellentesque iaculis dignissim lorem sit amet gravida. Pellentesque suscipit mattis neque vitae tempus. Aliquam erat volutpat. Morbi a euismod felis. Cras venenatis pellentesque nisl, non hendrerit quam consequat eu. Mauris quis diam id turpis fringilla congue ut viverra dolor. Nulla eu tempor tellus. Fusce dapibus porta mattis. Sed condimentum efficitur nibh, eu lacinia eros egestas ac. Mauris a urna ante.</p>
+
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- Bootstrap JS with Popper (for dropdowns, modals, tooltips, etc.) -->
