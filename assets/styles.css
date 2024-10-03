@@ -99,7 +99,7 @@ h3, h4, h5 {
 }
 @media (min-width: 1200px) {
   .h2, h2 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 }
 .container {
@@ -121,13 +121,17 @@ h3, h4, h5 {
 }
 
 /*custom helpers*/
+.mauto {
+  margin: 0 auto;
+}
+
 .light-content h1, .light-content h2, .light-content h3, .light-content h4, .light-content h5, .light-content p, .light-content li {
   color: #fff;
 }
 
 @media (min-width: 768px) {
   .medium-header-md {
-    font-size: 76px;
+    font-size: 70px;
   }
 }
 
